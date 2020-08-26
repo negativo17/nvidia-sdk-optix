@@ -31,7 +31,7 @@ sh %{SOURCE0} --skip-license --prefix=`pwd`
 
 %install
 mkdir -p %{buildroot}%{_includedir}/optix
-install -m 0755 -d -p include %{buildroot}%{_includedir}/optix
+cp -fra include/* %{buildroot}%{_includedir}/optix/
 
 %files
 %license doc/OptiX_EndUserLicense.pdf doc/OptiX_ThirdParty_Licenses.txt
