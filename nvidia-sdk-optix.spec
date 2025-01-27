@@ -36,7 +36,7 @@ mkdir -p %{buildroot}%{_includedir}/optix
 cp -fra include/* %{buildroot}%{_includedir}/optix/
 
 %files
-%license doc/OptiX_EndUserLicense.pdf doc/OptiX_ThirdParty_Licenses.txt
+%license OptiX_EndUserLicense.pdf OptiX_ThirdParty_Licenses.txt
 %doc doc/OptiX_API_Reference_%{version}.pdf doc/OptiX_Programming_Guide_%{version}.pdf
 %{_includedir}/optix
 
