@@ -1,5 +1,5 @@
 Name:           nvidia-sdk-optix
-Version:        8.1.0
+Version:        9.0.0
 Release:        1%{?dist}
 Summary:        NVIDIA OptiX Ray Tracing Engine APIs
 License:        https://developer.download.nvidia.com/designworks/DesignWorks_SDKs_Samples_Tools_License_distrib_use_rights_2017_06_13.pdf
@@ -7,8 +7,8 @@ URL:            https://developer.nvidia.com/optix
 BuildArch:      noarch
 
 # We're packaging only the headers, so the first run file is enough:
-Source0:        NVIDIA-OptiX-SDK-%{version}-linux64-x86_64-35015278.sh
-Source1:        NVIDIA-OptiX-SDK-%{version}-linux64-aarch64-35015278.sh
+Source0:        NVIDIA-OptiX-SDK-%{version}-linux64-x86_64.sh
+Source1:        NVIDIA-OptiX-SDK-%{version}-linux64-aarch64.sh
 
 %description
 An application framework for achieving optimal ray tracing performance on the
@@ -44,6 +44,9 @@ cp -fra include/* %{buildroot}%{_includedir}/optix/
 %doc SDK/*
 
 %changelog
+* Sun Oct 26 2025 Simone Caronni <negativo17@gmail.com> - 9.0.0-1
+- Update to 9.0.0.
+
 * Mon Jan 27 2025 Simone Caronni <negativo17@gmail.com> - 8.1.0-1
 - Update to 8.1.0.
 
