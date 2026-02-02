@@ -2,7 +2,7 @@ Name:           nvidia-sdk-optix
 Version:        9.1.0
 Release:        1%{?dist}
 Summary:        NVIDIA OptiX Ray Tracing Engine APIs
-License:        https://developer.download.nvidia.com/designworks/DesignWorks_SDKs_Samples_Tools_License_distrib_use_rights_2017_06_13.pdf
+License:        Proprietary
 URL:            https://developer.nvidia.com/optix
 BuildArch:      noarch
 
